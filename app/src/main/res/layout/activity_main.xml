@@ -1,0 +1,201 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:id="@+id/linear1"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+
+<RelativeLayout
+    android:id="@+id/relative1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:gravity="center"
+    android:onClick="location_more">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are at"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#111111"/>
+    <TextView
+        android:id="@+id/ed3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:hint="address"
+        android:layout_below="@+id/tv1" />
+
+
+    <TextView
+        android:id="@+id/ed1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ed3"
+        />
+    <TextView
+        android:id="@+id/ed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ed1" />
+
+
+</RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#112233"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="EMERGENCY"
+        android:textColor="#050505"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b1"
+            style="@android:style/Widget.Holo.Button.Borderless"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/am"
+            android:elevation="4dp"
+            android:gravity="bottom"
+            android:onClick="ambulance_call"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/b1"
+
+            android:background="@mipmap/policebw"
+            android:gravity="bottom"
+            android:onClick="police_call" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@mipmap/fire"
+            android:gravity="bottom"
+            android:onClick="fire_call" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#112233"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:text="OPTIONS"
+        android:textColor="#060606"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sos"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/sos3"
+            android:onClick="sos" />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_toRightOf="@+id/b1"
+            android:background="@mipmap/whistle2"
+            android:onClick="whistle" />
+
+        <Button
+            android:id="@+id/b6"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/siren2"
+            android:onClick="siren" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#112233"/>
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/timer"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="TAP SOS BUTTON TO SEND EMERGENCY MESSAGES"
+         android:textSize="20dp"
+         android:textColor="#71070c"
+         />
+
+ </RelativeLayout>
+    <Button
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:onClick="account_settings"
+        android:text="Account Settings"
+        android:textColor="#030303"
+        android:background="@drawable/gradient4"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnlogout"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="logout"
+        android:background="@drawable/gradient4"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="theSnehaThing"
+        android:textColor="#d5d5d6"/>
+
+</LinearLayout>
+
+    </ScrollView>

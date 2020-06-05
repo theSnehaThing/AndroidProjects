@@ -1,0 +1,137 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/relative_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient4">
+            <Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:title="Tips on Safety"
+                android:layout_toRightOf="@+id/back"
+                android:titleTextColor="#000000"
+                />
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/back2"
+                android:layout_alignBottom="@+id/toolbar"
+                android:onClick="back"/>
+
+        </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  1.   Walk with a friend whenever possible."
+                android:textColor="#112233"/>
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  2.  Use well-lighted, well-traveled routes. Avoid dark, vacant or deserted areas."
+                android:textColor="#112233"/>
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  3.  Walk with confidence. Show that you are aware and in control. Body language works."
+                android:textColor="#112233"/>
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="    4.    Trust your instincts. If someone or something makes you feel uneasy, get out or get away."
+                android:textColor="#112233"/>
+
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  5. If you feel you are being followed, move to a well-lighted and populated area or building, such as a store or restaurant, and call for assistance."
+                android:textColor="#112233"/>
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  6. If you are on campus after hours, stay alert."
+                android:textColor="#112233"/>
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  7.  Lock office or lab doors."
+                android:textColor="#112233"/>
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  8. Call Security if you see or hear anything suspicious."
+                android:textColor="#112233"/>
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  9. Tell a friend, colleague or Security where you are and when you plan to leave."
+                android:textColor="#112233"/>
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  10. Arrange to meet a friend or request an escort from Security when you leave."
+                android:textColor="#112233"/>
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  11. When you are out by car, park in well-lighted areas. Avoid parking in secluded parts of a parking lot. Stick to high traffic areas."
+                android:textColor="#112233"/>
+
+            <TextView
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  12. When out shopping, don't carry large bundles or packages. It distracts you from your surroundings and makes you a potential target for a thief."
+                android:textColor="#112233"/>
+
+        <TextView
+       android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="theSnehaThing"
+            android:textColor="#d5d5d6"/>
+
+    </LinearLayout>
+    </ScrollView>

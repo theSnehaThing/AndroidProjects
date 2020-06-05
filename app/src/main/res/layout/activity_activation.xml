@@ -1,0 +1,202 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradient4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+    <RelativeLayout
+        android:id="@+id/relative_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient4">
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="Activation"
+            android:titleTextColor="#050505"
+            android:layout_toRightOf="@+id/back"
+            />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back2"
+            android:layout_alignBottom="@+id/toolbar"
+            android:onClick="back"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:paddingTop="20dp"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/power_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Power button"
+            android:textColor="#505050"
+            android:textSize="20dp" />
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/power_button"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@+id/power_button"
+            android:layout_alignParentTop="true" />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/spinner1"
+            android:paddingBottom="20dp"/>
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#9d9d9e"
+            android:layout_below="@+id/tv1"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/delay_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delay in Activation"
+            android:textColor="#505050"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/delay"
+            android:layout_marginLeft="105dp"
+            android:layout_toRightOf="@+id/delay_button" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/delay_button"
+            android:paddingBottom="20dp"/>
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#8f8f8f"
+            android:layout_below="@+id/tv3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/panic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panic button"
+            android:textColor="#505050"
+            android:textSize="20dp"/>
+        <Switch
+            android:id="@+id/switch_panic"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_toRightOf="@+id/panic_button"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/panic_button"
+            android:paddingBottom="20dp"/>
+<view
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:background="#a7a7a7"
+    android:layout_below="@+id/tv2"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/size_panic_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Size of Panic button"
+            android:textColor="#505050"
+            android:textSize="20dp"/>
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/size_panic"
+            android:layout_marginLeft="90dp"
+            android:layout_toRightOf="@+id/size_panic_button"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/size_panic_button"
+            android:paddingBottom="20dp"/>
+<view
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:layout_below="@+id/tv5"
+    android:background="#a0a1a1"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/clicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panic button activates on"
+              android:textColor="#505050"
+            android:textSize="20dp"/>
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/clicks"
+            android:layout_marginLeft="45dp"
+            android:entries="@array/clicks"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/spinner4"
+            android:paddingBottom="20dp"/>
+
+
+    </RelativeLayout>
+    <TextView
+
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="theSnehaThing"
+        android:textColor="#d5d5d6"/>
+
+</LinearLayout>

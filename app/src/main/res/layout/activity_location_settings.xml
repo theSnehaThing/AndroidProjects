@@ -1,0 +1,114 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="1">
+    <RelativeLayout
+        android:id="@+id/relative_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient4">
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="Location Settings"
+            android:layout_toRightOf="@+id/back"
+            />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back2"
+            android:layout_alignBottom="@+id/toolbar"
+            android:onClick="back"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11"
+        android:paddingTop="20dp">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh Rate:"
+            android:textSize="20dp"
+            android:textColor="#409b22"/>
+
+        <Spinner
+            android:id="@+id/sp1"
+            android:layout_height="30dp"
+            android:layout_width="1000dp"
+            android:layout_marginLeft="135dp"
+            android:layout_toRightOf="@+id/tv1"
+            android:entries="@array/refresh_rate"/>
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/tv1"
+            android:paddingBottom="20dp"/>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:layout_below="@+id/tv2"
+    android:background="#aaaaab"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.11">
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location History:"
+            android:textSize="20dp"
+            android:textColor="#409b22"/>
+        <Spinner
+            android:id="@+id/sp2"
+            android:layout_height="30dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="135dp"
+            android:layout_toRightOf="@+id/tv3"
+            android:entries="@array/last_loc"/>
+
+
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@+id/tv3"
+            android:paddingBottom="20dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/tv4"
+            android:background="#aaaaab"/>
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_gravity="right"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="theSnehaThing"
+        android:textColor="#d6d6d6"/>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+
+
+<RelativeLayout
+    android:id="@+id/r2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_marginTop="100dp"
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="WELCOME TO"
+        android:textColor="#050505"
+        android:textSize="30dp"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HelpAtHand"
+        android:textColor="#050505"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_below="@+id/tv1"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="left"
+        android:text="this is a safety app that sends texts to your selected contacts in single tap along with your current location"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"/>
+
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:paddingLeft="10dp"
+        android:id="@+id/etemail"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/tv3"/>
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="password"
+        android:id="@+id/etpass"
+        android:inputType="textPassword"
+        android:layout_below="@+id/etemail"
+        />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/btnlogin"
+        android:layout_below="@+id/etpass"
+        android:background="@drawable/gradient4"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="register"
+        android:id="@+id/btnregister"
+        android:background="@drawable/gradient4"
+        android:layout_below="@+id/btnlogin"/>
+</RelativeLayout>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cde1f4"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_above="@+id/locpoptv1"
+            android:background="#0d73d9" />
+        <TextView
+            android:id="@+id/locpoptv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingTop="5dp"
+            android:scrollbarSize="15dp"
+            android:text="Current Location"
+            android:textColor="#020202"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/locpoptv1"
+            android:background="#0d73d9" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:paddingTop="2dp"
+            android:text="You can do the following:"
+            android:textColor="#686767"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/locpoptv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_1"
+            android:gravity="left"
+            android:onClick="refresh_map"
+            android:paddingLeft="7dp"
+            android:paddingTop="2dp"
+            android:scrollbarSize="15dp"
+            android:text="Refresh"
+            android:textColor="#223355"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/locpoptv2"
+            android:background="#909091" />
+
+        <TextView
+            android:id="@+id/locpoptv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locpoptv2"
+            android:onClick="view_map"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"
+            android:scrollbarSize="15dp"
+            android:text="View"
+            android:textColor="#223344"
+            android:textSize="20dp" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/locpoptv3"
+            android:background="#909091" />
+
+        <TextView
+            android:id="@+id/locpoptv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/locpoptv3"
+            android:onClick="share_map"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"
+            android:scrollbarSize="15dp"
+            android:text="Share"
+            android:textColor="#223344"
+            android:textSize="20dp"
+            />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/locpoptv4"
+            android:background="#909091" />
+
+    </RelativeLayout>
+</LinearLayout>

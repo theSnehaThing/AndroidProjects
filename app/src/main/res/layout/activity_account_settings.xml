@@ -1,0 +1,109 @@
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/r1"
+    android:background="@drawable/gradient4"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/relative_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient4">
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="Account Settings"
+            android:titleTextColor="#080808"
+            android:layout_toRightOf="@+id/back"
+            />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back2"
+            android:layout_alignBottom="@+id/toolbar"
+            android:onClick="back"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+android:id="@+id/re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_settings"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp">
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="50dp">
+            <Button
+                android:id="@+id/contacts1"
+                android:layout_below="@+id/acctv1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:onClick="contacts"
+                android:background="@mipmap/cc"/>
+            <Button
+                android:id="@+id/account1"
+                android:layout_below="@+id/acctv1"
+                android:layout_toRightOf="@id/contacts1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:background="@mipmap/user10"
+                android:onClick="account"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/settings1"
+                android:layout_below="@+id/acctv1"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:onClick="settings"
+                android:background="@mipmap/s"/>
+            <Button
+                android:id="@+id/more1"
+                android:layout_below="@+id/acctv1"
+                android:layout_toRightOf="@id/contacts1"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@mipmap/more"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:onClick="more"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <TextView
+        android:layout_below="@+id/re1"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="theSnehaThing"
+        android:textColor="#d5d5d6"/>
+
+
+</RelativeLayout>
+

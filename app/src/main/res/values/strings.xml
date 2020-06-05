@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">HelpAtHand</string>
+    <string name="title_activity_activation">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."</string>
+    <string-array name="refresh_rate">
+        <item>1minute</item>
+        <item>2minutes</item>
+        <item>3minutes</item>
+        <item>3minutes</item>
+        <item>4minutes</item>
+        <item>5minutes</item>
+        <item>10minutes</item>
+        <item>12minutes</item>
+        <item>15minutes</item>
+        <item>20minutes</item>
+    </string-array>
+    <string-array name="last_loc">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="power_button">
+        <item>3times</item>
+        <item>5times</item>
+        <item>7times</item>
+        <item>10times</item>
+    </string-array>
+    <string-array name="delay">
+        <item>1second</item>
+        <item>2seconds</item>
+        <item>3seconds</item>
+        <item>4seconds</item>
+        <item>5seconds</item>
+        <item>6seconds</item>
+        <item>7seconds</item>
+        <item>8seconds</item>
+        <item>9seconds</item>
+        <item>10seconds</item>
+    </string-array>
+    <string-array name="size_panic">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="clicks">
+        <item>Single touch</item>
+        <item>Double touch</item>
+    </string-array>
+
+
+</resources>

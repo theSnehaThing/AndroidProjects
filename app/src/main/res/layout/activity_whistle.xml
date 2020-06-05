@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient4">
+    <RelativeLayout
+        android:id="@+id/relative_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient4">
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:title="Whistle"
+            android:titleTextColor="#050505"
+            android:layout_toRightOf="@+id/back"
+            />
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back2"
+            android:layout_alignBottom="@+id/toolbar"
+            android:onClick="back"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="70dp"
+        android:text="Please press the to activate whistle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/whistle1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text=""
+        android:onClick="onwhistle"
+        android:layout_gravity="center"
+        android:background="@mipmap/whistle"/>
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/stop2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:text=""
+        android:onClick="stopwhistle"
+        android:layout_gravity="center"
+        android:background="@mipmap/stp"/>
+
+</LinearLayout>
